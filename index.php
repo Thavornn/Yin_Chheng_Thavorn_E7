@@ -305,7 +305,7 @@ $students_by_major = $stmt->fetchAll(PDO::FETCH_ASSOC);
                                                     <td><?php echo date('M d, Y', strtotime($student['created_at'])); ?></td>
                                                     <td>
                                                         <div class="btn-group" role="group">
-                                                            <a href="students/read_one.php?id=<?php echo $student['id']; ?>" class="btn btn-sm btn-info">
+                                                            <a href="students/read.php?id=<?php echo $student['id']; ?>" class="btn btn-sm btn-info">
                                                                 <i class="fas fa-eye"></i>
                                                             </a>
                                                             <a href="students/update.php?id=<?php echo $student['id']; ?>" class="btn btn-sm btn-warning">
